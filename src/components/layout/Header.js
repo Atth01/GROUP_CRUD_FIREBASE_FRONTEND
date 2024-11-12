@@ -1,17 +1,12 @@
 import React from "react";
 import LogoutButton from "../LogoutButton";
 
-function Header({ onLogout }) {
+function Header({ onLogout, userEmail }) {
     return (
         <div className="bg-purple-700 text-white p-4 flex justify-between items-center">
-            {/* Logo atau Nama Aplikasi di Kiri */}
-            <h1 className="text-2xl font-bold">Q-Nest</h1>
-
-            {/* Nama, Ikon, dan Tombol Logout di Kanan */}
+            <h1 className="text-2xl font-bold">College Web</h1>
             <div className="flex items-center">
-                {/* Nama */}
-                <span className="mr-2 text-lg font-semibold">Atthariq</span>
-                {/* Ikon SVG */}
+                <span className="mr-2 text-lg font-semibold">{userEmail}</span>
                 <svg
                     enableBackground="new -27 24 100 100"
                     height="40px"
@@ -34,7 +29,6 @@ function Header({ onLogout }) {
                         </g>
                     </g>
                 </svg>
-                {/* Tombol Logout */}
                 <LogoutButton onLogout={onLogout} />
             </div>
         </div>

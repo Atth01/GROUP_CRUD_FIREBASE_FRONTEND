@@ -31,6 +31,8 @@ function LoginForm({ onLogin }) {
             if (isRegisterMode) {
                 alert('Registrasi berhasil! Silakan login.');
                 setIsRegisterMode(false); // Kembali ke mode login setelah registrasi berhasil
+                setEmail(''); // Kosongkan email
+                setPassword(''); // Kosongkan password
             } else {
                 // Simpan token yang diterima saat login
                 localStorage.setItem('token', data.token);

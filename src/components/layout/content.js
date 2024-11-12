@@ -100,7 +100,7 @@ const Students = () => {
                     setEditStudent(null); // Reset edit mode untuk tambah data
                     setNewStudent({ npm: '', name: '', major: '' }); // Reset form
                 }}
-                className="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition duration-200 mb-4"
+                className="bg-purple-500 text-white p-2 rounded-md hover:bg-purple-600 transition duration-200 mb-4"
             >
                 Tambah Data Mahasiswa
             </button>
@@ -131,7 +131,7 @@ const Students = () => {
                                     <td className="py-3 px-4 border-b">
                                         <button
                                             onClick={() => handleEditClick(student)}
-                                            className="bg-yellow-500 text-white p-2 rounded-md hover:bg-yellow-600 transition duration-200 mr-2"
+                                            className="bg-purple-500 text-white p-2 rounded-md hover:bg-yellow-600 transition duration-200 mr-2"
                                         >
                                             Update
                                         </button>
