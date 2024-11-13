@@ -4,7 +4,7 @@ import LogoutButton from "../LogoutButton";
 function Header({ onLogout, userEmail }) {
     return (
         <div className="bg-purple-700 text-white p-4 flex justify-between items-center">
-            <h1 className="text-2xl font-bold">College Web</h1>
+            <h1 className="text-2xl font-bold ml-20">College Web</h1>
             <div className="flex items-center">
                 <span className="mr-2 text-lg font-semibold">{userEmail}</span>
                 <svg
